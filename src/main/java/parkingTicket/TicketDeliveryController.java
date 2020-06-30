@@ -22,11 +22,4 @@ import java.util.List;
          searchTicketDelivery.setStatus(StatusType.DeliveryCancelled);
          ticketDeliveryRepo.save(searchTicketDelivery);
      }
-
-     // 서킷브레이커 데모를 위한 동기 호출
-     @RequestMapping(method= RequestMethod.GET, path="/deliveryCancelations")
-     public void getDeliveryCancelation (){
-         System.out.println("##### TicketDeliveryController Get start: ");
-     }
-
  }
