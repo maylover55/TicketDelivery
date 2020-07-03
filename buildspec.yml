@@ -81,7 +81,7 @@ phases:
                         valueFrom:
                           configMapKeyRef:
                             name: parking
-                            key: urlticketdeliery 
+                            key: urlticketdelivery 
                       - name: username
                         valueFrom:
                           secretKeyRef:
